@@ -5,11 +5,11 @@ html {
 body {
   font-family: var(--font-family);
   color: var(--text);
-  font-size: 1.6rem;
+  font-size: 0.5rem;
 }
 
 p {
-  margin: 1rem 0;
+  margin: 0.2rem 0;
 }
 
 h1,
@@ -18,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 1rem 0 2rem 0;
+  margin: 0.2rem 0 0.5rem 0;
 }
 
 ul {
@@ -42,14 +42,12 @@ img {
 
 .grid-container {
   display: grid;
-  min-height: 100vh;
-  grid: "picture header" auto "aside main" 1fr/350px auto;
+  grid: "picture header" auto "aside main" 1fr/280px 1210px;
 }
 
 header {
   grid-area: header;
   background: linear-gradient(to right, var(--primary), var(--light));
-  padding: 10rem 5rem;
   text-align: center;
   color: white;
   display: flex;
@@ -58,19 +56,15 @@ header {
   align-items: center;
 }
 header h1 {
-  font-size: 6rem;
-  line-height: 8rem;
-  font-weight: 300;
-  letter-spacing: 3rem;
-}
-header p {
-  letter-spacing: 0.5rem;
+  font-size: 1rem;
+  line-height: 0.5rem;
+  font-weight: 50;
+  letter-spacing: 0.2rem;
 }
 
 .picture {
   grid-area: picture;
-  padding: 6rem;
-  background: green;
+  padding: 1rem;
 }
 .picture img {
   border-radius: 50%;

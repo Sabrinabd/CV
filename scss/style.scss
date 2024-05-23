@@ -3,17 +3,16 @@
 
 .grid-container {
   display: grid;
-  min-height: 100vh;
+
   grid:
     "picture header" auto
     "aside main" 1fr
-    / 350px auto;
+    / 280px 1210px;
 }
 
 header {
   grid-area: header;
   background: linear-gradient(to right, var(--primary), var(--light));
-  padding: 10rem 5rem;
   text-align: center;
   color: white;
   display: flex;
@@ -21,20 +20,16 @@ header {
   justify-content: center;
   align-items: center;
   h1 {
-    font-size: 6rem;
-    line-height: 8rem;
-    font-weight: 300;
-    letter-spacing: 3rem;
-  }
-  p {
-    letter-spacing: 0.5rem;
+    font-size: 1rem;
+    line-height: 0.5rem;
+    font-weight: 50;
+    letter-spacing: 0.2rem;
   }
 }
 
 .picture {
   grid-area: picture;
-  padding: 6rem;
-  background: green;
+  padding: 1rem;
   img {
     border-radius: 50%;
   }
