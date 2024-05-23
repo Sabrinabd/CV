@@ -72,12 +72,13 @@ header h1 {
 
 aside {
   grid-area: aside;
-  background-color: blue;
+  background: var(--background);
+  border-right: 1px solid var(--hint);
 }
 
 main {
   grid-area: main;
-  background-color: purple;
+  background: var(--background);
 }
 
 /*# sourceMappingURL=style.css.map */
