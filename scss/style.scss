@@ -1,5 +1,6 @@
-@use "base" as *;
-@use "reset" as *;
+@import "base";
+@import "reset";
+@import "classes";
 
 .grid-container {
   display: grid;
@@ -29,7 +30,9 @@ header {
 
 .picture {
   grid-area: picture;
-  padding: 1rem;
+  padding: 0.7rem;
+  border-right: 1px solid #ddd;
+
   img {
     border-radius: 50%;
   }
@@ -37,11 +40,30 @@ header {
 
 aside {
   grid-area: aside;
-  background: var(--background);
-  border-right: 1px solid var(--hint);
+
+  border-right: 1px solid #ddd;
+  min-height: 30rem;
+  padding: 0.5rem;
+  .block {
+    margin-bottom: 1rem;
+    h3 {
+      margin-bottom: 0;
+    }
+    p {
+      margin: 0 0 0.2rem 0;
+      font-style: italic;
+      color: var(--hint);
+    }
+  }
 }
 
 main {
   grid-area: main;
+
   background: var(--background);
+
+  min-height: 10rem;
+}
+.block {
+  font-size: 0.3rem;
 }

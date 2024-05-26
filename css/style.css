@@ -40,6 +40,14 @@ img {
   box-sizing: border-box;
 }
 
+.title-small {
+  letter-spacing: 0.1rem;
+  font-size: 0.4rem;
+}
+.title-so {
+  font-size: 0.3rem;
+}
+
 .grid-container {
   display: grid;
   grid: "picture header" auto "aside main" 1fr/280px 1210px;
@@ -64,7 +72,8 @@ header h1 {
 
 .picture {
   grid-area: picture;
-  padding: 1rem;
+  padding: 0.7rem;
+  border-right: 1px solid #ddd;
 }
 .picture img {
   border-radius: 50%;
@@ -72,13 +81,30 @@ header h1 {
 
 aside {
   grid-area: aside;
-  background: var(--background);
-  border-right: 1px solid var(--hint);
+  border-right: 1px solid #ddd;
+  min-height: 30rem;
+  padding: 0.5rem;
+}
+aside .block {
+  margin-bottom: 1rem;
+}
+aside .block h3 {
+  margin-bottom: 0;
+}
+aside .block p {
+  margin: 0 0 0.2rem 0;
+  font-style: italic;
+  color: var(--hint);
 }
 
 main {
   grid-area: main;
   background: var(--background);
+  min-height: 10rem;
+}
+
+.block {
+  font-size: 0.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
