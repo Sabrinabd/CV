@@ -48,6 +48,10 @@ img {
   font-size: 0.3rem;
 }
 
+.text-primary {
+  color: var(--primary);
+}
+
 .grid-container {
   display: grid;
   grid: "picture header" auto "aside main" 1fr/280px 1210px;
@@ -81,9 +85,10 @@ header h1 {
 
 aside {
   grid-area: aside;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #6c5f5f;
   min-height: 30rem;
   padding: 0.5rem;
+  min-height: 1500rem;
 }
 aside .block {
   margin-bottom: 1rem;
@@ -95,6 +100,37 @@ aside .block p {
   margin: 0 0 0.2rem 0;
   font-style: italic;
   color: var(--hint);
+}
+aside .block .bar-skill {
+  margin: 0.3rem 0;
+  height: 5px;
+  background: #8f8d8d;
+  position: relative;
+}
+aside .block .bar-skill .bar-skill-progress {
+  position: absolute;
+  height: 5px;
+  top: 0;
+  left: 0;
+  width: 80%;
+  background: var(--primary);
+}
+aside .block .bar-skill .bar-skill-dot {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background: var(--dark);
+  left: calc(80% - 5px);
+  top: -2.5px;
+  border-radius: 50%;
+}
+aside .block .stars-container {
+  display: flex;
+  margin: 0.2rem 0 0.4rem 0;
+  color: #8f8d8d;
+}
+aside .block .stars-container i {
+  margin: 0 0.1rem;
 }
 
 main {

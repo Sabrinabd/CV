@@ -7,3 +7,9 @@
     font-size: 0.3rem;
   }
 }
+
+.text {
+  &-primary {
+    color: var(--primary);
+  }
+}
