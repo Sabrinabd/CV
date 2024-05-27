@@ -88,7 +88,7 @@ aside {
   border-right: 1px solid #6c5f5f;
   min-height: 30rem;
   padding: 0.5rem;
-  min-height: 1500rem;
+  min-height: 1500px;
 }
 aside .block {
   margin-bottom: 1rem;
@@ -131,6 +131,21 @@ aside .block .stars-container {
 }
 aside .block .stars-container i {
   margin: 0 0.1rem;
+}
+aside .block .social-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0.2rem 0;
+}
+aside .block .social-container i {
+  font-size: 0.4rem;
+  margin: 0 0.2rem;
+  flex: 0 0 50px;
+}
+aside .block .social-container p {
+  flex: auto;
+  margin: 0;
 }
 
 main {

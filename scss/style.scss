@@ -44,7 +44,7 @@ aside {
   border-right: 1px solid #6c5f5f;
   min-height: 30rem;
   padding: 0.5rem;
-  min-height: 1500rem;
+  min-height: 1500px;
 
   .block {
     margin-bottom: 1rem;
@@ -85,6 +85,21 @@ aside {
       color: #8f8d8d;
       i {
         margin: 0 0.1rem;
+      }
+    }
+    .social-container {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin: 0.2rem 0;
+      i {
+        font-size: 0.4rem;
+        margin: 0 0.2rem;
+        flex: 0 0 50px;
+      }
+      p {
+        flex: auto;
+        margin: 0;
       }
     }
   }
