@@ -78,6 +78,7 @@ header h1 {
   grid-area: picture;
   padding: 0.7rem;
   border-right: 1px solid #ddd;
+  background: #f9f7f7;
 }
 .picture img {
   border-radius: 50%;
@@ -89,6 +90,7 @@ aside {
   min-height: 30rem;
   padding: 0.5rem;
   min-height: 1500px;
+  background: #f9f7f7;
 }
 aside .block {
   margin-bottom: 1rem;
@@ -150,8 +152,14 @@ aside .block .social-container p {
 
 main {
   grid-area: main;
-  background: var(--background);
-  min-height: 10rem;
+  padding: 0.5rem;
+}
+main h2 {
+  margin-bottom: 0.4rem;
+}
+main p {
+  letter-spacing: 0.1rem;
+  font-size: 0.4rem;
 }
 
 .block {
