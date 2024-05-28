@@ -40,6 +40,10 @@ img {
   box-sizing: border-box;
 }
 
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
 .title-small {
   letter-spacing: 0.1rem;
   font-size: 0.4rem;
@@ -50,6 +54,9 @@ img {
 
 .text-primary {
   color: var(--primary);
+}
+.text-hint {
+  color: #c7c1c1;
 }
 
 .grid-container {
@@ -158,8 +165,43 @@ main h2 {
   margin-bottom: 0.4rem;
 }
 main p {
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.04rem;
   font-size: 0.4rem;
+  margin-bottom: 1rem;
+}
+main .experience {
+  display: flex;
+  margin: 0.5rem 0;
+}
+main .experience .timeline {
+  text-align: center;
+  color: #8f8d8d;
+  padding-right: 1rem;
+  border-right: 1px solid #dad6d6;
+}
+main .experience .timeline p {
+  margin: 0;
+  font-size: 0.3rem;
+}
+main .experience .content {
+  padding-left: 0.6rem;
+}
+main .experience .content p {
+  font-size: 0.3rem;
+  margin: 0.2rem;
+}
+main .experience .content ul {
+  margin: 0.5rem 0;
+  list-style: circle;
+  padding-left: 0.5rem;
+}
+main .experience .content ul li {
+  font-size: 0.3rem;
+  margin-bottom: 0.2rem;
+}
+main .experience .content h3 {
+  font-size: 0.4rem;
+  margin-bottom: 0.2rem;
 }
 
 .block {
