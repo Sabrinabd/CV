@@ -61,7 +61,7 @@ img {
 
 .grid-container {
   display: grid;
-  grid: "picture header" auto "aside main" 1fr/280px 1210px;
+  grid: "picture header" auto "aside main" 1fr "footer footer" auto/280px 1210px;
 }
 
 header {
@@ -206,6 +206,60 @@ main .experience .content h3 {
 
 .block {
   font-size: 0.3rem;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2rem;
+  background: var(--text);
+}
+footer h2 {
+  margin-bottom: 0.5rem;
+  color: #ddd;
+}
+footer form {
+  display: flex;
+  align-items: center;
+}
+footer form .prefix {
+  background: linear-gradient(to right, var(--dark), var(--light));
+  padding: 0 0.2rem;
+  color: white;
+  font-size: 0.6rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+footer form button {
+  background: var(--text);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+footer form button:hover {
+  opacity: 0.9;
+}
+footer form button .postfix {
+  background: linear-gradient(to right, var(--dark), var(--light));
+  padding: 0 0.2rem;
+  color: white;
+  font-size: 0.6rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+footer form input {
+  outline: none;
+  border: none;
+  min-width: 400px;
+  padding: 0.1rem;
+}
+footer form input::placeholder {
+  color: #242222;
 }
 
 /*# sourceMappingURL=style.css.map */

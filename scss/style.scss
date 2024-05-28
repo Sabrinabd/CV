@@ -9,6 +9,7 @@
   grid:
     "picture header" auto
     "aside main" 1fr
+    "footer footer" auto
     / 280px 1210px;
 }
 
@@ -159,4 +160,60 @@ main {
 }
 .block {
   font-size: 0.3rem;
+}
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2rem;
+  background: var(--text);
+
+  h2 {
+    margin-bottom: 0.5rem;
+    color: #ddd;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    .prefix {
+      background: linear-gradient(to right, var(--dark), var(--light));
+      padding: 0 0.2rem;
+      color: white;
+      font-size: 0.6rem;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    button {
+      background: var(--text);
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        opacity: 0.9;
+      }
+      .postfix {
+        background: linear-gradient(to right, var(--dark), var(--light));
+        padding: 0 0.2rem;
+        color: white;
+        font-size: 0.6rem;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+
+    input {
+      outline: none;
+      border: none;
+      min-width: 400px;
+      padding: 0.1rem;
+
+      &::placeholder {
+        color: #242222;
+      }
+    }
+  }
 }
