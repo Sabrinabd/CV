@@ -79,9 +79,18 @@ img {
   color: #c7c1c1;
 }
 
+/* Landscape phones and down */
+/* Landscape phone to portrait tablet */
+/* Portrait tablet to landscape and desktop */
+/* Large desktop */
 .grid-container {
   display: grid;
   grid: "picture header" auto "aside main" 1fr "footer footer" auto/280px 1210px;
+}
+@media (max-width: 480px) {
+  .grid-container {
+    grid: "header" auto "main" auto "picture" auto "aside" auto "footer" auto/auto;
+  }
 }
 
 header {
@@ -94,11 +103,21 @@ header {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 480px) {
+  header {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+}
 header h1 {
   font-size: 1rem;
   line-height: 0.5rem;
   font-weight: 50;
   letter-spacing: 0.2rem;
+}
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 0.6rem;
+  }
 }
 header span {
   display: inline-block;
@@ -196,6 +215,11 @@ main {
   grid-area: main;
   padding: 0.5rem;
 }
+@media (max-width: 480px) {
+  main {
+    padding: 1rem 0.5rem;
+  }
+}
 main h2 {
   margin-bottom: 0.4rem;
 }
@@ -254,6 +278,11 @@ footer {
   padding: 2rem;
   background: var(--text);
 }
+@media (max-width: 480px) {
+  footer {
+    padding: 1rem 0.5rem;
+  }
+}
 footer h2 {
   margin-bottom: 0.5rem;
   color: #ddd;
@@ -292,6 +321,11 @@ footer form input {
   border: none;
   min-width: 400px;
   padding: 0.1rem;
+}
+@media (max-width: 480px) {
+  footer form input {
+    min-width: 200px;
+  }
 }
 footer form input::placeholder {
   color: #242222;
